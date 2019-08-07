@@ -9,12 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TsavoActivity"></activity>
-        <activity android:name=".NanyukiActivity" />
-        <activity android:name=".NakuruActivity" />
-        <activity android:name=".AmboseliActivity" />
-        <activity android:name=".SamburuActivity" />
-        <activity android:name=".MaraActivity" />
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".TsavoActivity"></activity>
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".NanyukiActivity" />
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".NakuruActivity" />
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".AmboseliActivity" />
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".SamburuActivity" />
+        <activity
+            android:theme="@style/AppTheme2"
+            android:name=".MaraActivity" />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme2" />
