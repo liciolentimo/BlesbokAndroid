@@ -1,14 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+<TextView
+    android:id="@+id/welcome"
+    android:text="Welcome to Blesbok Safaris!"
+    android:textStyle="bold"
+    android:textColor="@color/orange"
+    android:paddingLeft="80dp"
+    android:textSize="15sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/elephant"
+            android:layout_below="@id/welcome"
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp"
+            android:text="Blesbok Safaris is a Kenyan Company that provides Safari Tours and Travel.We aim at providing you with the best safari experience in Kenya. Enjoy the great wildlife and marine parks Kenya has to offer. Book with us today!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/elephant"-->
+            <!--android:layout_below="@id/welcome"-->
+            <!--android:src="@drawable/elephant"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+        <TextView
+            android:id="@+id/popular"
+            android:layout_below="@id/elephant"
+            android:paddingLeft="100dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/orange"
+            android:textSize="15sp"
+            android:paddingBottom="10dp"
+            android:text="Most Popular Destinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mara_card"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/popular"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="2dp"
+            android:clickable="true">
+            <ImageView
+                android:src="@drawable/cheetah"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Maasai Mara"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/samburu_card"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/mara_card"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="2dp">
+            <ImageView
+                android:src="@drawable/zebra"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Samburu"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/amboseli_card"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/samburu_card"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="2dp">
+            <ImageView
+                android:src="@drawable/simba"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Amboseli"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
