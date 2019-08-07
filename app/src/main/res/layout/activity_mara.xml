@@ -11,9 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
     <ImageView
         android:src="@drawable/simba"
         android:layout_width="match_parent"
@@ -176,6 +173,13 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#c0c0c0"/>
+
+        <TextView
+            android:text="* All prices are in USD"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </TableLayout>
       <Button
