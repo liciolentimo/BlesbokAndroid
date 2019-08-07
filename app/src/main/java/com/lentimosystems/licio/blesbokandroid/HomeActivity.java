@@ -1,12 +1,16 @@
 package com.lentimosystems.licio.blesbokandroid;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -18,6 +22,8 @@ import com.lentimosystems.licio.blesbokandroid.fragments.HomeFragment;
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+
+    private ShareActionProvider shareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+//                ShareActionProvider myShareActionProvider =
+//                        (ShareActionProvider) MenuItemCompat.getActionProvider(item);
+//                String playStoreLink = "https://play.google.com/store/apps/details?id=" +
+//                        getPackageName();
+//                String yourShareText = "Download Blesbok Safaris for Android Now! " + playStoreLink;
+//                Intent shareIntent = ShareCompat.IntentBuilder.from(this)
+//                        .setType("text/plain").setText(yourShareText).getIntent();
+//                myShareActionProvider.setShareIntent(shareIntent);
                 break;
             case R.id.nav_contact:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

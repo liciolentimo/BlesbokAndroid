@@ -8,6 +8,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.lentimosystems.licio.blesbokandroid.AmboseliActivity;
 import com.lentimosystems.licio.blesbokandroid.MaraActivity;
@@ -19,6 +20,7 @@ import com.lentimosystems.licio.blesbokandroid.SamburuActivity;
  */
 public class HomeFragment extends Fragment implements View.OnClickListener{
     CardView mara_card,samburu_card,amboseli_card;
+   // Button btnMore;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -34,10 +36,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
          mara_card = (CardView)itemView.findViewById(R.id.mara_card);
          samburu_card = (CardView)itemView.findViewById(R.id.samburu_card);
          amboseli_card = (CardView)itemView.findViewById(R.id.amboseli_card);
+        // btnMore = (Button)itemView.findViewById(R.id.btnMore);
 
          mara_card.setOnClickListener(this);
          samburu_card.setOnClickListener(this);
          amboseli_card.setOnClickListener(this);
+        // btnMore.setOnClickListener(this);
 
         return itemView;
     }

@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ContactFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/txtContact"
+        android:text="GET IN TOUCH"
+        android:textStyle="bold"
+        android:paddingLeft="100dp"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:paddingBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Contact" />
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/contactinfo"
+        android:layout_below="@id/txtContact"
+        android:text="Contact Information"
+        android:paddingLeft="100dp"
+        android:textSize="15sp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/box"
+        android:text="P.O. Box 15213, Nakuru"
+        android:layout_below="@id/contactinfo"
+        android:paddingLeft="100dp"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:drawablePadding="5dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/town"
+        android:text="+254717810659"
+        android:layout_below="@id/box"
+        android:paddingLeft="100dp"
+        android:paddingBottom="10dp"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/phone"
+    android:text="info@blesboksafaris.com"
+    android:layout_below="@id/town"
+    android:paddingLeft="100dp"
+    android:paddingBottom="20dp"
+    android:drawableLeft="@drawable/ic_mail_black_24dp"
+    android:drawablePadding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/social"
+        android:layout_below="@id/phone"
+        android:text="LET'S GET SOCIAL"
+        android:paddingBottom="10dp"
+        android:paddingLeft="100dp"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

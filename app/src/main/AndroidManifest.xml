@@ -9,24 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PaymentActivity"></activity>
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".TsavoActivity"></activity>
+            android:name=".TsavoActivity"
+            android:theme="@style/AppTheme2" />
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".NanyukiActivity" />
+            android:name=".NanyukiActivity"
+            android:theme="@style/AppTheme2" />
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".NakuruActivity" />
+            android:name=".NakuruActivity"
+            android:theme="@style/AppTheme2" />
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".AmboseliActivity" />
+            android:name=".AmboseliActivity"
+            android:theme="@style/AppTheme2" />
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".SamburuActivity" />
+            android:name=".SamburuActivity"
+            android:theme="@style/AppTheme2" />
         <activity
-            android:theme="@style/AppTheme2"
-            android:name=".MaraActivity" />
+            android:name=".MaraActivity"
+            android:theme="@style/AppTheme2" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".HomeActivity" />
+
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme2" />
