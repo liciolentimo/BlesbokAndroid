@@ -183,6 +183,7 @@
 
     </TableLayout>
       <Button
+          android:id="@+id/btn_book_mara"
           android:layout_gravity="center"
           android:text="Book Now"
           android:background="@color/orange"
