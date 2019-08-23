@@ -24,7 +24,7 @@ public class MaraActivity extends AppCompatActivity {
         btn_book_mara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MaraActivity.this,PaymentActivity.class);
+                Intent intent = new Intent(MaraActivity.this,PaymentActivity2.class);
                 startActivity(intent);
             }
         });
